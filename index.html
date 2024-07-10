@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-Tube</title>
+    <!-- set logo link -->
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
+    <!-- daisyUI 3.9.2 CSS file + Tailwind CSS CDN script:- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family Inter:- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5786334b9e.js" crossorigin="anonymous"></script>
+    <style>
+        .body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container mx-auto mt-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <img class="" src="./images/Logo.png" alt="">
+                </div>
+                <div class="navbar-center">
+                    <a id="sort-view" class="btn text-lg text-[#252525] font-medium">Sort by views</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="bg-[#FF1F3D] cursor-pointer rounded text-white px-5 py-2 text-lg font-medium"
+                        href="blog.html">Blog</a>
+                </div>
+            </div>
+        </nav>
+        <hr class="mt-5">
+    </header>
+    <main>
+        <!-- tab option section  -->
+        <section class="container mx-auto">
+            <div class="tab-container w-full">
+                <div class="tabs mx-auto p-8 flex justify-center" id="tab-container">
+
+                </div>
+            </div>
+        </section>
+        <!-- card section  -->
+        <section class="container mx-auto">
+            <div id="card-container" class="grid grid-cols-1 px-5 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            </div>
+        </section>
+    </main>
+    <!-- JS file added here -->
+    <script src="JS/tube.js"></script>
+</body>
+
+</html>

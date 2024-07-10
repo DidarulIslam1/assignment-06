@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Questions</title>
+    <!-- daisyUI 3.9.2 CSS file + Tailwind CSS CDN script:- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto mt-10 p-10">
+    <div class="mb-5">
+        <a class="bg-[#FF1F3D] cursor-pointer rounded text-white px-5 py-2 text-lg font-medium" href="index.html">Go to
+            the PH-Tube</a>
+    </div>
+    <h1 class="text-slate-700 text-3xl font-bold mb-5">Here are some blog questions and answers.</h1>
+    <hr>
+    <ul class="mt-5">
+        <div class="mb-5">
+            <h3 class="text-2xl font-semibold text-slate-700"><span class="text-red-500">Q-No-01:</span> Discuss the
+                scope
+                of var, let, and const.</h3>
+            <p class="text-xl"><span class="text-blue-500 text-2xl font-semibold">Ans:-</span>
+                <br>
+                <b>#var:</b>
+                var was the original way to declare variables in JavaScript.
+                It has function scope, which means that the variable is visible throughout the entire function in which
+                it
+                is defined, regardless of block boundaries.
+                If you define a variable with var outside of any function, it becomes a global variable, visible
+                throughout
+                the entire program.
+                <br>
+                <b>Advantages:</b>
+                It is available in all versions of JavaScript, making it compatible with older codebases.
+                It can be useful when you specifically want a variable to have function-wide scope or to be a global
+                variable.
+                <br>
+                <b>Recommendations:</b>
+                Avoid using var in modern JavaScript code, as it has some quirks and can lead to unintended issues.
+                <br>
+                <br>
+                <b>#let:</b>
+                let was introduced in ES6 (ECMAScript 2015) to address some of the issues with var.
+                It has block scope, which means the variable is only visible within the block (statement or expression,
+                as well as loops and conditionals) where it is defined.
+                <br>
+                <b>Advantages:</b>
+                It prevents variable hoisting and allows you to declare variables that are limited in scope to the
+                block, statement, or expression on which it is used.
+                It's a good choice when you want to declare a variable that will be reassigned later.
+                <br>
+                <b>Recommendations:</b>
+                Use let when you need a variable that might be reassigned.
+                <br>
+                <br>
+                <b>#const:</b>
+                const is also introduced in ES6.
+                It is used to declare constants, which are variables that cannot be reassigned after they are initially
+                assigned a value.
+                Like let, const also has block scope.
+                <br>
+                <b>Advantages:</b>
+                It helps prevent accidental reassignment of a variable, which can lead to bugs and unexpected behavior.
+                It communicates to other developers that a particular variable is meant to be constant.
+                <br>
+                <b>Recommendations:</b>
+                Use const when you have a value that should never change throughout its lifecycle in the program.
+            </p>
+        </div>
+        <!-- ------------------------------------------------------------- -->
+        <div class="mt-10">
+            <h3 class="text-2xl font-semibold text-slate-700"><span class="text-red-500">Q-No-02:</span> Tell us the use
+                cases of null and undefined.</h3>
+            <p class="text-xl"><span class="text-blue-500 text-2xl font-semibold">Ans:-</span>
+                <br>
+                <b>#null:</b> null is explicitly assigned to a variable or property to indicate that it has no value or
+                it is intentionally empty.
+                <br>
+                <b>Use cases of null:-</b>
+                <br>
+                <b>Intentional Absence of Value:</b> It's often used to represent the intentional absence of any object
+                value or value itself.
+                <br>
+                <b>Resetting or Clearing a Variable:</b> Sometimes, you might set a variable to null when you want to
+                clear it or reset it.
+                <br>
+                <b>Returning Indicative Value from a Function:</b> A function might return null to indicate that it
+                couldn't produce a meaningful result.
+                <br>
+                <br>
+                <b>#undefined:</b> undefined is a variable that hasn't been assigned a value yet, or hasn't been
+                declared at all. When you declare a variable but don't assign a value to it, it is automatically
+                assigned the value undefined.
+                <br>
+                <b>Use Cases of undefined:-</b>
+                <b>Variable Declaration without Initialization:</b> When you declare a variable but don't assign a value
+                to it, it is automatically assigned the value undefined.
+                <br>
+                <b>Function Parameters without Arguments:</b> If a function is defined with parameters but called
+                without providing the expected number of arguments, the missing parameters will have the value
+                undefined.
+                <br>
+                <b>Accessing Non-Existent Properties:</b> If you try to access an object property that doesn't exist, it
+                will return undefined.
+                <br>
+                <b>Return Value of Functions without Explicit Return:</b> If a function doesn't explicitly return a
+                value, it implicitly returns undefined.
+            </p>
+        </div>
+        <div class="mt-10">
+            <h3 class="text-2xl font-semibold text-slate-700"><span class="text-red-500">Q-No-03:</span> What do you
+                mean by
+                REST API?</h3>
+            <p class="text-xl"><span class="text-blue-500 text-2xl font-semibold">Ans:-</span>
+                <br>
+                <b>REST API:</b> REST API stands for Representational State Transfer Application Programming Interface.
+                It is an architectural style for designing networked applications. RESTful APIs are based on a set of
+                principles that describe how networked resources should be defined and addressed. RESTful APIs are
+                widely used in web development because they are flexible, scalable, and easy to understand. They are the
+                foundation of many modern web services and are used to enable communication between different systems
+                over the internet.
+            </p>
+        </div>
+    </ul>
+
+</body>
+
+</html>
